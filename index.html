@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IT Company</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container nav">
+      <h1 class="logo">AS<span>Company</span></h1>
+      <ul class="menu" id="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="dark-toggle" onclick="toggleDarkMode()">
+        <i class="bx bx-moon"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="container">
+      <h2>We build modern kiber suports</h2>
+      <p>Web, Mobile Al design services</p>
+      <a href="#contact" class="btn">Get Started</a>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="container grid">
+      <div class="card service-card" data-title="Web Design"
+        data-text="Biz zamonaviy, tezkor va responsive web saytlar yaratamiz.">
+        Web Design
+      </div>
+
+      <div class="card service-card" data-title="Mobile Apps"
+        data-text="Android va iOS uchun professional mobil ilovalar ishlab chiqamiz.">
+        Apps Mobile
+      </div>
+
+      <div class="card service-card" data-title="AI Design"
+        data-text="Sun’iy intellekt asosida dizayn va analytics yechimlar.">
+        AI Design
+      </div>
+
+      <div class="card service-card" data-title="Cyber Support"
+        data-text="24/7 texnik yordam va kiber xavfsizlik xizmatlari.">
+        Kiber Supports
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <h2 class="section-title">Our Projects</h2>
+
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Web Platform</h3>
+          <p>Modern website</p>
+          <button class="project-btn" onclick="openModal(
+            'Web Platform',
+            'Bu loyiha bizneslar uchun zamonaviy web platforma. HTML, CSS va JavaScript ishlatilgan.'
+          )">
+            View
+          </button>
+        </div>
+
+        <div class="project-card">
+          <h3>Mobile App</h3>
+          <p>Android & iOS</p>
+          <button class="project-btn" onclick="openModal(
+            'Mobile App',
+            'Bu loyiha Android va iOS uchun ishlab chiqilgan mobil ilova.'
+          )">
+            View
+          </button>
+        </div>
+
+        <div class="project-card">
+          <h3>AI Dashboard</h3>
+          <p>Analytics system</p>
+          <button class="project-btn" onclick="openModal(
+            'AI Dashboard',
+            'Sun’iy intellekt asosidagi dashboard. Chart va real-time data mavjud.'
+          )">
+            View
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODAL -->
+  <div class="modal" id="projectModal">
+    <div class="modal-content">
+      <div class="drag-line"></div>
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <p id="modalText"></p>
+    </div>
+  </div>
+
+
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" placeholder="Your name" required />
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <textarea placeholder="Message"></textarea>
+        <button type="submit" class="btn">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2026 Azizbek Saparboyev Company</p>
+  </footer>
+
+  <script src="money.js"></script>
+</body>
+
+</html>
